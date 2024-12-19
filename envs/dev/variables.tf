@@ -1,6 +1,6 @@
 variable "location" {
   description = "Azure region"
-  default     = "South Central US"
+  default     = "East US"
 }
 
 variable "aks_node_count" {
