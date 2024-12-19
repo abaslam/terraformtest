@@ -22,7 +22,7 @@ resource "azurerm_private_endpoint" "sql_pe" {
   subnet_id           = var.subnet_id
 
   private_service_connection {
-    is_manual_connection           = true
+    is_manual_connection           = false
     name                           = "sql-connection"
     private_connection_resource_id = azurerm_mssql_server.sql_server.id
     subresource_names              = ["sqlServer"]
